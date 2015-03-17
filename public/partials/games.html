@@ -1,12 +1,20 @@
 <h1>Jeux</h1>
-<div class="row" >
-  <div class="col-xs-6 col-md-3" ng-repeat="game in data">
-    <div class="thumbnail" ng-click="isCollapsed = !isCollapsed">
-      <img src="{{game.imagePath}}" alt="{{game.title}}">
-      <div class="caption" collapse="isCollapsed">
-        <h3>{{game.title}}</h3>
-        <p>{{game.description}}</p>
-      </div>
-    </div>
+<div class="panel panel-default" ng-repeat="game in data">
+  <div class="panel-heading" ng-click="isCollapsed = !isCollapsed" >{{game.title}}</div>
+  <div collapse="isCollapsed">
+  <div class="panel-body">
+    <p>{{game.description}}</p>
+  </div>
+
+  <table class="table">
+    <thead>
+      <th>Hostname</th>
+      <th>Ip</th> 
+    </thead>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
   </div>
 </div>
