@@ -8,6 +8,7 @@ module.exports = {
       pattern: '%d{ABSOLUTE} %[[%p]%] %m'
     }
   },
+  token: 'token',
   mailer: {
     from: {
       name: 'LAN Montmorency',

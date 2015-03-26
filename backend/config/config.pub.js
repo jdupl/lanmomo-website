@@ -4,7 +4,6 @@ module.exports = {
     pc: 50,
     console: 15
   },
-  token: 'token',
   games: [
     {
       title: 'Team Fortress 2',
